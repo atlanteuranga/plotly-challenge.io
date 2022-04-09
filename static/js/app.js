@@ -1,6 +1,6 @@
 counter = 0;
 function BellyButton(sample){
-    d3.json("../../../samples.json").then(function(data){
+    d3.json("../../samples.json").then(function(data){
         if (counter === 0){
         let select = document.querySelector('select');
         let options = data.names.map(id => `<option value =${id}>${id}</option>`).join('\n');
